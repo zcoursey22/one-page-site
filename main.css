@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body > div {
+  padding: 6vw 0;
+}
+
+h2 {
+  font-size: 4.75vw;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.625vw;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0 20vw;
+  color: rgba(255,255,255,0.8);
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+
+.line {
+  background: #46b;
+  width: 4rem;
+  height: 0.2rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+div {
+  padding: 2vw;
+}
+div > * {
+  margin: 2vw;
+}
+
+#navbar {
+  color: white;
+  position: fixed;
+  width: 95vw;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: right;
+  padding: 2vw;
+  /*background: white;
+  border-bottom: 0.01em solid #eaeaea;*/
+}
+#title {
+  position: absolute;
+  top: 0;
+  left: 2vw;
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: bold;
+  color: rgba(255,255,255,0.8);
+}
+.navbar-items {
+  font-weight: bold;
+  color: rgba(255,255,255,0.8);
+}
+
+#top {
+  color: white;
+  background: url(https://blackrockdigital.github.io/startbootstrap-creative/img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 12vw;
+}
+#top > p {
+  font-size: 1rem;
+}
+#top > a > button {
+  background: #46b;
+  color: white;
+}
+
+#about {
+  background: #46b;
+  color: white;
+}
+#about .line {
+  background: white;
+}
+#about > a > button {
+  background: white;
+  color: #222;
+}
+
+#skills {
+  background: white;
+}
+.languages {
+  display: inline-block;
+  width: 25rem;
+  padding: 0;
+  margin: 2vw 0;
+}
+#language-container {
+  margin: 0;
+  padding: 0;
+}
+#skills > #language-container > div > p {
+  color: rgba(34,34,34,0.8);
+  padding: 0 3vw;
+}
+#skills > .line {
+  margin-bottom: 0;
+}
+
+#work {
+  background: red;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#work > div {
+  margin: 0;
+  padding: 0;
+  flex: 33%;
+}
+#work > div:nth-child(1) {
+  background: #46b;
+}
+#work > div:nth-child(2) {
+  background: #78c;
+}
+#work > div:nth-child(3) {
+  background: #348;
+}
+#work > div:nth-child(4) {
+  background: #57b;
+}
+#work > div:nth-child(5) {
+  background: #359;
+}
+#work > div:nth-child(6) {
+  background: #46b;
+}
+
+#contact {
+  background: #222;
+  color: white;
+}
