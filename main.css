@@ -8,6 +8,7 @@
   text-decoration: none;
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
+  transition: color 0.25s, background 0.25s;
 }
 
 body > div {
@@ -68,19 +69,18 @@ img {
 #navbar {
   color: white;
   position: fixed;
-  width: 95vw;
+  width: 100vw;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   text-align: right;
-  padding: 2vw;
-  /*background: white;
-  border-bottom: 0.01em solid #eaeaea;*/
+  padding: 2vw 7vw;
+  z-index: 100;
 }
 #title {
   position: absolute;
   top: 0;
-  left: 2vw;
+  left: 7vw;
   font-size: 1.25rem;
   line-height: 1;
   font-weight: bold;
@@ -96,7 +96,19 @@ img {
 .navbar-items:hover {
   color: white;
 }
-
+.navbar-colored {
+  background: white;
+  border-bottom: 0.01rem solid #ddd;
+}
+.navbar-colored > #title {
+  color: #46b;
+}
+.navbar-colored > .navbar-items {
+  color: rgba(34,34,34,0.7);
+}
+.navbar-colored > .navbar-items:hover {
+  color: #46b;
+}
 
 #top {
   color: white;
@@ -151,13 +163,15 @@ img {
   color: rgba(34,34,34,0.7);
   padding: 0 3rem;
 }
+#skills > #language-container > div > img {
+  width: 4rem;
+}
 #skills > .line {
   margin-bottom: 0;
 }
 
 
 #work {
-  background: red;
   margin: 0;
   padding: 0;
   display: flex;
@@ -166,33 +180,114 @@ img {
 #work > div {
   margin: 0;
   padding: 0;
-  display: flex;
+  display: block;
   flex: 33.3333%;
   width: 33.3333vw;
-  height: 20vw;
+  height: 18vw;
+  cursor: pointer;
+  transition: 0.15s;
+}
+#background {
+  background: rgba(34,34,34,0.8);
+  position: fixed;
+  display: none;
+  z-index: 101;
+  width: 100vw;
+  height: 100vh;
+}
+#image-figure {
+  margin: 0;
+  padding: 0;
+  max-width: 40rem;
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+#current-image {
+  max-width: 40rem;
+  width: 100vw;
+  position: relative;
+}
+#x {
+  max-width: 2rem;
+  width: 5vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  filter: invert(100%);
+  cursor: pointer;
+}
+#x:hover {
+  filter: invert(90%);
+}
+.arrows {
+  max-width: 3rem;
+  width: 8vw;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: invert(100%);
+  cursor: pointer;
+}
+.arrows:hover {
+  filter: invert(90%);
+}
+#left {
+  left: 0;
+}
+#right {
+  right: 0;
+}
+.image-slider-on {
+  overflow: hidden;
+}
+.image-grid > * {
+  margin: 0;
+  padding: 0;
+}
+.image-grid h5 {
+  font-size: 1.25vw;
+  color: transparent;
+  margin-top: 10%;
+}
+.image-grid span {
+  font-size: 1.75vw;
+  color: transparent;
+}
+#work > div:hover > .image-grid h5 {
+  color: rgba(255,255,255,0.8);
+}
+#work > div:hover > .image-grid span {
+  color: white;
+}
+#work > div:hover {
+  background-color: #46b;
+  background-blend-mode: soft-light;
 }
 #work > div:nth-child(1) {
-  background: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/1.jpg");
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/1.jpg");
   background-size: cover;
 }
 #work > div:nth-child(2) {
-  background: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/2.jpg");
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/2.jpg");
   background-size: cover;
 }
 #work > div:nth-child(3) {
-  background: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/3.jpg");
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/3.jpg");
   background-size: cover;
 }
 #work > div:nth-child(4) {
-  background: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/4.jpg");
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/4.jpg");
   background-size: cover;
 }
 #work > div:nth-child(5) {
-  background: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/5.jpg");
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/5.jpg");
   background-size: cover;
 }
 #work > div:nth-child(6) {
-  background: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/6.jpg");
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/6.jpg");
   background-size: cover;
 }
 

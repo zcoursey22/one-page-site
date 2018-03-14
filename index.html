@@ -7,27 +7,35 @@
 </head>
 <body>
 
+  <div id="background">
+    <div id="image-figure">
+      <img id="current-image" src="">
+      <img onclick="toggleImageSlider()" id="x" src="img/x.png">
+    </div>
+    <img onclick="next('left')" class="arrows" id="left" src="img/left.png">
+    <img onclick="next('right')" class="arrows" id="right" src="img/right.png">
+  </div>
 
   <div id="navbar">
-    <a id="title" href="#top">SINGLE PAGE SITE</a>
-    <a class="navbar-items" href="#about">ABOUT</a>
-    <a class="navbar-items" href="#skills">SKILLS</a>
-    <a class="navbar-items" href="#work">WORK</a>
-    <a class="navbar-items" href="#contact">CONTACT</a>
+    <a id="title" href="javascript:scrollTo('top')">SINGLE PAGE SITE</a>
+    <a class="navbar-items" href="javascript:scrollTo('about')">ABOUT</a>
+    <a class="navbar-items" href="javascript:scrollTo('skills')">SKILLS</a>
+    <a class="navbar-items" href="javascript:scrollTo('work')">WORK</a>
+    <a class="navbar-items" href="javascript:scrollTo('contact')">CONTACT</a>
   </div>
 
   <div id="top">
     <h2>YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES</h2>
     <div class="line"></div>
     <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-    <a href="#about"><button>FIND OUT MORE</button></a>
+    <a href="javascript:scrollTo('about')"><button>FIND OUT MORE</button></a>
   </div>
 
   <div id="about">
     <h3>We've got what you need!</h3>
     <div class="line"></div>
     <p>Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-    <a href="#skills"><button>GET STARTED</button></a>
+    <a href="javascript:scrollTo('skills')"><button>GET STARTED</button></a>
   </div>
 
   <div id="skills">
@@ -53,12 +61,12 @@
   </div>
 
   <div id="work">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div onclick="toggleImageSlider(1)"><div class="image-grid"><h5>CATEGORY</h5><span>Project Name</span></div></div>
+    <div onclick="toggleImageSlider(2)"><div class="image-grid"><h5>CATEGORY</h5><span>Project Name</span></div></div>
+    <div onclick="toggleImageSlider(3)"><div class="image-grid"><h5>CATEGORY</h5><span>Project Name</span></div></div>
+    <div onclick="toggleImageSlider(4)"><div class="image-grid"><h5>CATEGORY</h5><span>Project Name</span></div></div>
+    <div onclick="toggleImageSlider(5)"><div class="image-grid"><h5>CATEGORY</h5><span>Project Name</span></div></div>
+    <div onclick="toggleImageSlider(6)"><div class="image-grid"><h5>CATEGORY</h5><span>Project Name</span></div></div>
   </div>
 
   <div id="contact">
@@ -74,6 +82,9 @@
       <a href="mailto:email.sample.com">email@sample.com</a>
     </div>
   </div>
+
+
+<script src="main.js"></script>
 
 
 </body>
