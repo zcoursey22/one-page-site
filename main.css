@@ -6,6 +6,7 @@
   padding: 0;
   outline: none;
   text-decoration: none;
+  font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -22,13 +23,13 @@ h3 {
 }
 
 h4 {
-  font-size: 1.625vw;
+  font-size: 1.625rem;
 }
 
 p {
   font-size: 1rem;
   padding: 0 20vw;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.7);
 }
 
 button {
@@ -37,6 +38,7 @@ button {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 2vw;
+  cursor: pointer;
 }
 
 .line {
@@ -57,6 +59,12 @@ div > * {
   margin: 2vw;
 }
 
+img {
+  margin: 0;
+  padding: 0;
+}
+
+
 #navbar {
   color: white;
   position: fixed;
@@ -76,12 +84,19 @@ div > * {
   font-size: 1.25rem;
   line-height: 1;
   font-weight: bold;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.7);
+}
+#title:hover {
+  color: white;
 }
 .navbar-items {
   font-weight: bold;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.7);
 }
+.navbar-items:hover {
+  color: white;
+}
+
 
 #top {
   color: white;
@@ -91,12 +106,16 @@ div > * {
   padding-top: 12vw;
 }
 #top > p {
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 #top > a > button {
   background: #46b;
   color: white;
 }
+#top > a > button:hover {
+  background: #35a;
+}
+
 
 #about {
   background: #46b;
@@ -109,6 +128,10 @@ div > * {
   background: white;
   color: #222;
 }
+#about > a > button:hover {
+  background: #ddd;
+}
+
 
 #skills {
   background: white;
@@ -122,14 +145,16 @@ div > * {
 #language-container {
   margin: 0;
   padding: 0;
+  padding-top: 3rem;
 }
 #skills > #language-container > div > p {
-  color: rgba(34,34,34,0.8);
-  padding: 0 3vw;
+  color: rgba(34,34,34,0.7);
+  padding: 0 3rem;
 }
 #skills > .line {
   margin-bottom: 0;
 }
+
 
 #work {
   background: red;
@@ -141,28 +166,58 @@ div > * {
 #work > div {
   margin: 0;
   padding: 0;
-  flex: 33%;
+  display: flex;
+  flex: 33.3333%;
+  width: 33.3333vw;
+  height: 20vw;
 }
 #work > div:nth-child(1) {
-  background: #46b;
+  background: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/1.jpg");
+  background-size: cover;
 }
 #work > div:nth-child(2) {
-  background: #78c;
+  background: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/2.jpg");
+  background-size: cover;
 }
 #work > div:nth-child(3) {
-  background: #348;
+  background: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/3.jpg");
+  background-size: cover;
 }
 #work > div:nth-child(4) {
-  background: #57b;
+  background: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/4.jpg");
+  background-size: cover;
 }
 #work > div:nth-child(5) {
-  background: #359;
+  background: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/5.jpg");
+  background-size: cover;
 }
 #work > div:nth-child(6) {
-  background: #46b;
+  background: url("https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/6.jpg");
+  background-size: cover;
 }
+
 
 #contact {
   background: #222;
   color: white;
+}
+img {
+  width: 3rem;
+}
+.contacts {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  min-width: 25vw;
+  margin-top: 2vw;
+}
+#contact > div > a {
+  display: block;
+  font-size: 1rem;
+}
+#email > a {
+  color: #46b;
+}
+#email > a:hover {
+  text-decoration: underline;
 }
