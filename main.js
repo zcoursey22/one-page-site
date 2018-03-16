@@ -32,8 +32,19 @@ function next(dir) {
   image.src = `https://blackrockdigital.github.io/startbootstrap-creative/img/portfolio/fullsize/${newSource}.jpg`;
 }
 
-// Smoothly scrolls to different sections of the page
+// Scrolls to different sections of the page
 // - - - - - Is not accurate - - - - - //
 function scrollTo(section) {
   document.getElementById(section).scrollIntoView({behavior: 'smooth'});
+}
+
+// Toggles menu
+// - - - - - Needs improvement - - - - - //
+function showMenu() {
+  var navbar = document.getElementById('navbar');
+  if (navbar.classList.contains('hidden-navbar-items')) {
+    navbar.classList.remove('hidden-navbar-items');
+  } else {
+    navbar.classList.add('hidden-navbar-items');
+  }
 }

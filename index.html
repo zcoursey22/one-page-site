@@ -16,12 +16,13 @@
     <img onclick="next('right')" class="arrows" id="right" src="img/right.png">
   </div>
 
-  <div id="navbar">
+  <div id="navbar" class="hidden-navbar-items">
     <a id="title" href="javascript:scrollTo('top')">SINGLE PAGE SITE</a>
-    <a class="navbar-items" href="javascript:scrollTo('about')">ABOUT</a>
+    <a class="navbar-items" id="first-navbar-item" href="javascript:scrollTo('about')">ABOUT</a>
     <a class="navbar-items" href="javascript:scrollTo('skills')">SKILLS</a>
     <a class="navbar-items" href="javascript:scrollTo('work')">WORK</a>
     <a class="navbar-items" href="javascript:scrollTo('contact')">CONTACT</a>
+    <a href="javascript:showMenu();" id="menu" onclick="myFunction()">&#9776;</a>
   </div>
 
   <div id="top">
